@@ -1,6 +1,6 @@
-module "vpc" {
-    source  = "terraform-google-modules/network/google"
-    version = "3.4.0"
+module "network" {
+    source  = "app.terraform.io/team-hydra/network/google"
+    version = "3.2.2"
 
     project_id   = var.project
     network_name = "gaurav-network"
